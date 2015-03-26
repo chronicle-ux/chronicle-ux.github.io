@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Hairline"), local("Lato-Hairline"), url(http://fonts.gstatic.com/s/lato/v11/5FbdueAKJ1eeO4CsvGhNRevvDin1pK8aKteLpeZ5c0A.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(http://fonts.gstatic.com/s/lato/v11/0DeoTBMnW4sOpD0Zb8OQSALUuEpTyoUstqEm5AMlJo4.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1EqTbJWOZQBfhZ0e3RL9uvesZW2xOQ-xsNqO47m55DA.ttf) format("truetype"); }
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  background: -webkit-linear-gradient(top, #58c3f9 1%, #a6dffc 99%);
+  background: linear-gradient(to bottom, #58c3f9 1%, #a6dffc 99%);
+  background-attachment: fixed, fixed;
+  font-family: Lato, sans-serif;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px; }
+
+#main-header {
+  text-align: center; }
+
+#main-footer {
+  padding: 40px; }
+
+.logo {
+  background-image: url("../assets/logo.png");
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  height: 40px;
+  margin: 0 auto;
+  width: 40px;
+  position: relative; }
+  @media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+    .logo {
+      background-image: url("../assets/logo@2x.png"); } }
+
+.screenshot {
+  width: 1130px;
+  margin-left: -65px;
+  margin-bottom: 50px; }
+  .screenshot.search-firefox {
+    background-image: url("../assets/search-firefox.png");
+    background-size: 1130px 840px;
+    height: 840px; }
+    @media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .screenshot.search-firefox {
+        background-image: url("../assets/search-firefox@2x.png"); } }
+  .screenshot.search-shoe {
+    background-image: url("../assets/search-shoe.png");
+    background-size: 1130px 614px;
+    height: 614px; }
+    @media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .screenshot.search-shoe {
+        background-image: url("../assets/search-shoe@2x.png"); } }
+  .screenshot.search-feature {
+    background-image: url("../assets/search-shoe-feature.png");
+    background-size: 1130px 615px;
+    height: 614px; }
+    @media (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      .screenshot.search-feature {
+        background-image: url("../assets/search-shoe-feature@2x.png"); } }
