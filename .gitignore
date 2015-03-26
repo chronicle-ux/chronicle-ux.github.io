@@ -13,3 +13,4 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 .DS_Store
+lib/

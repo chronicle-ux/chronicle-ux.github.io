@@ -1,89 +1,33 @@
 @import 'variables';
 @import 'mixins';
 
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://fonts.gstatic.com/s/lato/v11/5FbdueAKJ1eeO4CsvGhNRevvDin1pK8aKteLpeZ5c0A.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/0DeoTBMnW4sOpD0Zb8OQSALUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/1EqTbJWOZQBfhZ0e3RL9uvesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
-}
-
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 // BASE STYLES
 
 body {
-  background: linear-gradient(to bottom, #58c3f9 1%,#a6dffc 99%);
-  background-attachment: fixed, fixed;  
-  font-family: Lato, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
   justify-content: center;
-}
-
-
-// LAYOUT STYLES
-
-.wrapper {
-  margin: 0 auto;
-  width: $base-width;
-}
-
-#main-header {
-  text-align: center;
-}
-
-#main-footer {
-  padding: 40px;
+  min-height: 100vh;
 }
 
 .logo {
-  @include hidpi-background-image('logo', 40px 40px);
+  @include hidpi-background-image('logo', 200px 200px);
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 40px;
+  height: 200px;
   margin: 0 auto;
-  width: 40px;
+  width: 200px;
   position: relative;
+  flex: 1;
 }
 
-.screenshot {
-  width: 1130px;
-  margin-left: -65px;
-  margin-bottom: 50px;
-
-  &.search-firefox {
-    @include hidpi-background-image('search-firefox', 1130px 840px);
-    height: 840px;
-  }
-
-  &.search-shoe {
-    @include hidpi-background-image('search-shoe', 1130px 614px);
-    height: 614px;
-  }
-
-  &.search-feature {
-    @include hidpi-background-image('search-shoe-feature', 1130px 615px);
-    height: 614px;
-  }
-}
 
 
 
